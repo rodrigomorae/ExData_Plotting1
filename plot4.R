@@ -10,7 +10,7 @@ data1$FullDate<-t
 
 ## Plot
 par(mfrow=c(2,2))
-plot(data1[,10],data1[,3],type="l",ylab="Global Active Power (kilowatts)",xlab="")
+plot(data1[,10],as.character(data1[,3]),type="l",ylab="Global Active Power (kilowatts)",xlab="")
 plot(data1$FullDate,as.character(data1$Voltage),type="l",ylab="Vltage",xlab="datetime")
 plot(data1[,10],as.numeric(as.character(data1[,7])),type="l",ylab="Energy sub metering",xlab="")
 points(data1[,10],as.numeric(as.character(data1[,8])), col="red",type="l")
